@@ -9,6 +9,7 @@ var singleton *pkg.Singleton
 
 func init() {
 	fmt.Println("Init project")
+	singleton = pkg.NewSingleton(singleton, "Init")
 }
 
 func main() {
